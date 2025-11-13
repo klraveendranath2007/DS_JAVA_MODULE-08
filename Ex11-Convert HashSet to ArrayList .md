@@ -7,7 +7,7 @@ To convert a collection of distinct integers stored in a HashSet into an ArrayLi
 2. 
 3. 
 4.  
-5.   
+   
 
 ## Program:
 ```
