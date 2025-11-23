@@ -20,15 +20,36 @@ RegisterNumber: 212224060212
 import java.util.*;
 
 public class ArrayToTreeSet {
+
+    public static TreeSet<Integer> convertArrayToTreeSet(int[] arr) {
+        
+        TreeSet<Integer> set = new TreeSet<>();
+        for (int a:arr)
+            set.add(a);
+        return set;
+
+    }
+
     public static void main(String[] args) {
-        Integer[] arr = {50, 20, 40, 10, 30};
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
 
-        TreeSet<Integer> set = new TreeSet<>(Arrays.asList(arr));
+        TreeSet<Integer> treeSet = convertArrayToTreeSet(arr);
+        System.out.println("Elements in TreeSet:");
+        for (int num : treeSet) {
+            System.out.println(num);
+        }
 
-        System.out.println("Array elements: " + Arrays.toString(arr));
-        System.out.println("TreeSet elements (sorted): " + set);
+        sc.close();
     }
 }
+
+Output:
+
 ```
 
 ## Output:
