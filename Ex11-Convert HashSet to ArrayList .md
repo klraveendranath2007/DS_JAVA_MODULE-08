@@ -17,22 +17,30 @@ Program to To convert a collection of distinct integers stored in a HashSet into
 Developed by: K L RAVEENDRANATH
 RegisterNumber:  212224060212
 */
-
 import java.util.*;
 
 public class HashSetToArrayList {
+
+    public static ArrayList<Integer> convertToArrayList(HashSet<Integer> set) {
+        // Type Your Code Here.
+        return new ArrayList<>(set);
+    }
+
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         HashSet<Integer> set = new HashSet<>();
-        set.add(10);
-        set.add(20);
-        set.add(30);
-        set.add(40);
-        set.add(50);
+        for (int i = 0; i < n; i++) {
+            int num = sc.nextInt();
+            set.add(num);
+        }
 
-        System.out.println("HashSet: " + set);
-
-        ArrayList<Integer> list = new ArrayList<>(set);
-        System.out.println("ArrayList: " + list);
+        ArrayList<Integer> list = convertToArrayList(set);
+        System.out.println("ArrayList contents:");
+        for (int num : list) {
+            System.out.print(num + " ");
+        }
+        sc.close();
     }
 }
 ```
