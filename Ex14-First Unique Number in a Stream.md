@@ -23,22 +23,32 @@ RegisterNumber:  212224060212
 
 import java.util.*;
 
-public class FirstUniqueTracker {
-    public static void main(String[] args) {
-        int[] stream = {4, 5, 4, 5, 3, 2, 1};
+public class FirstUniqueNumberStream {
+
+    public static void processStream(int n, Scanner sc) {
         LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
-
-        for (int num : stream)
+        for (int i = 0; i < n; i++) {
+            int num = sc.nextInt();
             map.put(num, map.getOrDefault(num, 0) + 1);
-
-        System.out.println("Stream: " + Arrays.toString(stream));
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() == 1) {
-                System.out.println("First unique number: " + entry.getKey());
-                return;
+            boolean found = false;
+            for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+                if (entry.getValue() == 1) {
+                    System.out.println("First unique number: " + entry.getKey());
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                System.out.println("No unique number");
             }
         }
-        System.out.println("No unique number found.");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        processStream(n, sc);
+        sc.close();
     }
 }
 ```
