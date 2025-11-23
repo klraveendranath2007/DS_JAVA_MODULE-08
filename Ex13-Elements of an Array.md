@@ -16,16 +16,28 @@ Program to FILL the first 10 elements of an array with a constant value using th
 Developed by: K L RAVEENDRANATH
 RegisterNumber: 212224060212
 */
+import java.util.*;
 
-import java.util.Arrays;
+public class FillArrayUsingArraysFill {
 
-public class FillArray {
+    public static int[] fillArray(int size, int value) {
+        int[] arr = new int[size];
+        Arrays.fill(arr, value);
+        return arr;
+    }
+
     public static void main(String[] args) {
-        int[] arr = new int[10];
-        Arrays.fill(arr, 5);
-        System.out.println("Array after filling: " + Arrays.toString(arr));
+        Scanner sc = new Scanner(System.in);
+        int value = sc.nextInt();
+        int[] arr = fillArray(10, value);
+        System.out.println("Array elements:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        sc.close();
     }
 }
+
 ```
 
 ## Output:
