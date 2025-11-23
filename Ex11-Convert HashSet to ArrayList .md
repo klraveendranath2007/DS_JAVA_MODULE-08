@@ -22,7 +22,7 @@ import java.util.*;
 public class HashSetToArrayList {
 
     public static ArrayList<Integer> convertToArrayList(HashSet<Integer> set) {
-        // Type Your Code Here.
+        
         return new ArrayList<>(set);
     }
 
