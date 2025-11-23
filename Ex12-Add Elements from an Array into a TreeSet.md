@@ -1,5 +1,5 @@
 # Ex12 Add Elements from an Array into a TreeSet
-## DATE:
+## DATE:22-09-2025
 ## AIM:
 To write a Java program that adds elements from an array into a TreeSet and displays the elements in sorted order.
 ## Algorithm
@@ -32,7 +32,8 @@ public class ArrayToTreeSet {
 ```
 
 ## Output:
-<img width="466" height="157" alt="image" src="https://github.com/user-attachments/assets/c3e001ac-0a24-4c96-924e-b2564adfcaf8" />
+<img width="724" height="504" alt="image" src="https://github.com/user-attachments/assets/af1e1a04-a777-43e2-97a0-258d19c4a4d5" />
+
 
 
 ## Result:
