@@ -1,5 +1,5 @@
 # Ex14 Tracking the First Unique Number in a Stream using LinkedHashMap
-## DATE:
+## DATE:25-09-2025
 ## AIM:
 To implement a program that tracks the first unique (non-repeating) number in a stream of integers using a LinkedHashMap.
 
@@ -44,7 +44,8 @@ public class FirstUniqueTracker {
 ```
 
 ## Output:
-<img width="595" height="167" alt="image" src="https://github.com/user-attachments/assets/7796479a-d7e4-4fad-a2d5-5f78ae3cfeab" />
+<img width="786" height="589" alt="image" src="https://github.com/user-attachments/assets/adfd5f62-3778-4a2a-8d6b-bd8db3fc5a23" />
+
 
 
 
